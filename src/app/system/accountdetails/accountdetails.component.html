@@ -1,0 +1,14 @@
+
+<div>
+    <h2>Account Details</h2>
+    <form>
+      <label for="accountNumber">Account Number:</label>
+      <input type="text" id="accountNumber" [(ngModel)]="accountNumber" name="accountNumber" required>
+  
+      <label for="pin">PIN:</label>
+      <input type="password" id="pin" [(ngModel)]="pin" name="pin" required>
+  
+      <button type="button" (click)="openaccountdetails()" >Proceed</button>
+    </form>
+  </div>
+  

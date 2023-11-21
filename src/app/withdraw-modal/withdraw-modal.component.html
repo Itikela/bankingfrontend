@@ -1,0 +1,24 @@
+<div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog" aria-labelledby="withdrawModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="withdrawModalLabel">Withdraw</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="withdraw()">
+            <label for="accountNumberWithdraw">Account Number:</label>
+            <input type="text" id="accountNumberWithdraw" [(ngModel)]="accountNumberWithdraw" name="accountNumberWithdraw" required>
+  
+            <label for="amountWithdraw">Amount:</label>
+            <input type="number" id="amountWithdraw" [(ngModel)]="amountWithdraw" name="amountWithdraw" required>
+  
+            <button type="submit" class="btn btn-primary">Withdraw</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

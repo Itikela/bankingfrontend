@@ -1,0 +1,28 @@
+
+  <div>
+    <h2>Sign Up</h2>
+    
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" [(ngModel)]="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" [(ngModel)]="lastName" name="lastName" required>
+
+      <label for="username">Username:</label>
+      <input type="email" id="username" [(ngModel)]="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" required>
+
+      <label for="pin">PIN:</label>
+      <input type="text" id="pin" [(ngModel)]="pin" name="pin" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" [(ngModel)]="dob" name="dob" required>
+
+      <button type="submit" (click)="signUp()" >Sign Up</button>
+      
+    
+  </div>
+  
+  

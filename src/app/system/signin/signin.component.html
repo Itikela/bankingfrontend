@@ -1,0 +1,13 @@
+ <div class="loginpage">
+    <h2>Sign In</h2>
+    
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" required>
+
+      <button type="submit" class="btn btn-primary" (click)="signIn()">Sign In</button>
+   
+  </div>
+ 

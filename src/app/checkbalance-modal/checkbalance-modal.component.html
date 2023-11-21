@@ -1,0 +1,26 @@
+<div class="modal fade" id="checkBalanceModal" tabindex="-1" role="dialog" aria-labelledby="checkBalanceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="checkBalanceModalLabel">Check Balance</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="checkBalance()">
+            <label for="accountNumberCheckBalance">Account Number:</label>
+            <input type="text" id="accountNumberCheckBalance" [(ngModel)]="accountNumberCheckBalance" name="accountNumberCheckBalance" required>
+  
+            <button type="submit" class="btn btn-primary">Check Balance</button>
+          </form>
+  
+          <div *ngIf="balance !== undefined">
+            <p>Account Balance: {{ balance | currency:'USD':'symbol':'1.2-2' }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
